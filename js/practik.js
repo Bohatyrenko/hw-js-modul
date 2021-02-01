@@ -1,10 +1,13 @@
-const a = function (name) {
-  console.log(name);
-};
+function abbrevName(name) {
+  let newName = name
+    .split(" ")
+    .map(function (item) {
+      return item[0];
+    })
+    .join(".");
+  console.log(newName);
 
-const b = function (newName) {
-  const c = "Jon";
-  newName(c);
-};
+  return newName.toUpperCase();
+}
 
-b(a);
+console.log(abbrevName("Jon Abram"));
