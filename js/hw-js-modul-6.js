@@ -25,6 +25,18 @@
 // filterArray([1, 2, 3, 4, 5], 3);
 
 /** 3/44 */
+function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
+  // Пиши код ниже этой строки
+  firstArray.forEach(function (number) {
+    if (secondArray.includes(number)) {
+      commonElements.push(number);
+    }
+  });
+  return commonElements;
+  // Пиши код выше этой строки
+}
+getCommonElements([1, 2, 3], [2, 4]);
 /** 4/44 */
 /** 5/44 */
 /** 6/44 */
