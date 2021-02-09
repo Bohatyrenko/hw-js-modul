@@ -408,10 +408,7 @@
 //     this.blacklistedEmails.push(email);
 //   }
 //   isBlacklisted(email) {
-//     if (this.blacklistedEmails.includes(email)) {
-//       return true;
-//     }
-//     return false;
+//     return this.blacklistedEmails.includes(email);
 //   }
 
 //   static AccessLevel = {
