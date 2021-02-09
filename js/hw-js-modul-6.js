@@ -25,25 +25,84 @@
 // filterArray([1, 2, 3, 4, 5], 3);
 
 /** 3/44 */
-function getCommonElements(firstArray, secondArray) {
-  const commonElements = [];
-  // Пиши код ниже этой строки
-  firstArray.forEach(function (number) {
-    if (secondArray.includes(number)) {
-      commonElements.push(number);
-    }
-  });
-  return commonElements;
-  // Пиши код выше этой строки
-}
-getCommonElements([1, 2, 3], [2, 4]);
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   firstArray.forEach(function (number) {
+//     if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//   });
+//   return commonElements;
+// }
+// getCommonElements([1, 2, 3], [2, 4]);
+
 /** 4/44 */
+// const calculateTotalPrice = (quantity, pricePerItem) =>{
+//   return quantity * pricePerItem;
+// }
+
 /** 5/44 */
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
 /** 6/44 */
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// };
+
 /** 7/44 */
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+//   return filteredNumbers;
+// };
+
 /** 8/44 */
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Пиши код выше этой строки
+//   return commonElements;
+// };
 /** 9/44 */
+// function changeEven(numbers, value) {
+//   const newArry = [];
+
+//   numbers.forEach((number) => {
+//     if (number % 2 === 0) {
+//       newArry.push(number + value);
+//     } else {
+//       newArry.push(number);
+//     }
+//   });
+//   return newArry;
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// changeEven([2, 8, 3, 7, 4, 6], 10);
+// changeEven([17, 24, 68, 31, 42], 100);
+// changeEven([44, 13, 81, 92, 36, 54], 100);
+
 /** 10/44 */
+// const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+// const planetsLengths = planets.map((planet) => planet.length);
+
 /** 11/44 */
 /** 12/44 */
 /** 13/44 */
