@@ -104,15 +104,172 @@
 // const planetsLengths = planets.map((planet) => planet.length);
 
 /** 11/44 */
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+//   { title: "Враг Божий", author: "Бернард Корнуэлл", rating: 8.67 },
+// ];
+// const titles = books.map((book) => book.title);
+
 /** 12/44 */
+// const books = [
+//   {
+//     title: "Последнее королевство",
+//     author: "Бернард Корнуэлл",
+//     genres: ["приключения", "историческое"],
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     genres: ["фантастика"],
+//   },
+//   {
+//     title: "Красна как кровь",
+//     author: "Ли Танит",
+//     genres: ["ужасы", "мистика"],
+//   },
+// ];
+
+// const genres = books.flatMap((book) => book.genres);
+
 /** 13/44 */
+
+// const getUserNames = (users) => users.map((user) => user.name);
+
 /** 14/44 */
+// const getUserEmails = (users) => users.map((user) => user.email);
+
 /** 15/44 */
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// const evenNumbers = numbers.filter((number) => number % 2 === 0);
+// const oddNumbers = numbers.filter((number) => number % 2 !== 0);
+
 /** 16/44 */
+// const books = [
+//     {
+//       title: 'Последнее королевство',
+//       author: 'Бернард Корнуэлл',
+//       genres: ['приключения', 'историческое']
+//     },
+//     {
+//       title: 'На берегу спокойных вод',
+//       author: 'Роберт Шекли',
+//       genres: ['фантастика', 'мистика']
+//     },
+//     {
+//       title: 'Красна как кровь',
+//       author: 'Ли Танит',
+//       genres: ['ужасы', 'мистика', 'приключения']
+//     }
+//   ];
+//   const allGenres = books.flatMap(book => book.genres);
+//   const uniqueGenres = allGenres.filter((genres, index, allGenres) => allGenres.indexOf(genres) === index)
+
 /** 17/44 */
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = 'Бернард Корнуэлл';
+
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+
 /** 18/44 */
-/** 19/44 */
+// const getUsersWithEyeColor = (users, color) =>
+//   users.filter((user) => user.eyeColor === color);
+
+// /** 19/44 */
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male",
+    age: 37,
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female",
+    age: 34,
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male",
+    age: 24,
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female",
+    age: 21,
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    gender: "male",
+    age: 27,
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    gender: "male",
+    age: 38,
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female",
+    age: 39,
+  },
+];
+// const getUsersWithAge = (users, minAge, maxAge) =>
+//   users.filter((user) => user.age > minAge && user.age < maxAge);
+
 /** 20/44 */
+// const friends = users.flatMap((user) => user.friends);
+// console.log(friends);
+const getUsersWithFriend = (users, friendName) =>
+  users.filter((user) => user.friends.filter((user.friends) );
+console.log(getUsersWithFriend(users, "Briana Decker"));
+
+const positiveValues = user.friends.filter(user.friends=> user.friends[] >= 0);
 /** 21/44 */
 /** 22/44 */
 /** 23/44 */
