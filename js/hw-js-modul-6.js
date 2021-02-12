@@ -261,16 +261,20 @@ const users = [
 ];
 // const getUsersWithAge = (users, minAge, maxAge) =>
 //   users.filter((user) => user.age > minAge && user.age < maxAge);
-
 /** 20/44 */
-// const friends = users.flatMap((user) => user.friends);
-// console.log(friends);
-const getUsersWithFriend = (users, friendName) =>
-  users.filter((user) => user.friends.filter((user.friends) );
-console.log(getUsersWithFriend(users, "Briana Decker"));
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter((user) => user.friends.includes(friendName));
+// };
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
 
-const positiveValues = user.friends.filter(user.friends=> user.friends[] >= 0);
 /** 21/44 */
+const c = (users) => {
+  const b = users.flatMap((user) => user.friends);
+  const a = (friend, index, users) => {
+    users.indexOf(friend) === index;
+  };
+};
+console.log(c(user));
 /** 22/44 */
 /** 23/44 */
 /** 24/44 */
