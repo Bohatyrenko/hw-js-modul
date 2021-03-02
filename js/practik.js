@@ -1,26 +1,76 @@
-// const numbers = [5, 10, 15, 20, 25];
+import cards from "./data.js";
 
-// // Классический for
-// for (let i = 0; i < numbers.length; i += 1) {
-//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
-// }
+const listRef = document.createElement("ul");
+const modalRef = document.querySelector(".modal");
+const formRef = document.querySelector(".form-js");
+const todoRef = document.querySelector(".todo");
+const filterRef = document.querySelector(".filter");
+const todoListRef = document.querySelector(".todo-list");
 
-// // Перебирающий forEach
-// numbers.forEach(function (number, index) {
-//   console.log(`Индекс ${index}, значение ${number}`);
-// });
+listRef.classList.add("list-js");
 
-// const sequenceSum = (begin, end, step) => {
-//   let total = 0;
+document.body.prepend(listRef);
 
-//   for(begin; begin <= end; begin += step) {
-//     total += begin;
-//   }
-//   console.log(total);
-//   return begin;
-// };
+const mark = cards.map(({ name, id, url, description }) => {
+  const itemListref = document.createElement("li");
+  const titleRef = document.createElement("h2");
+  const pictureRef = document.createElement("img");
+  titleRef.textContent = name;
+  pictureRef.src = url;
+  pictureRef.alt = description;
+  itemListref.id = id;
+  pictureRef.width = "500";
+  itemListref.append(titleRef, pictureRef);
+  return itemListref;
+});
 
-// sequenceSum(2,2,2) === 2
-// sequenceSum(2,6,2) === 12 // 2 + 4 + 6
-// sequenceSum(1,5,1) === 15 // 1 + 2 + 3 + 4 + 5
-// sequenceSum(1,5,3) === 5 // 1 + 4
+listRef.append(...mark);
+
+listRef.addEventListener("click", (e) => {
+  console.dir(e.target);
+  if (e.target.localName === "img") {
+    modalRef.style.display = "block";
+    modalRef.children[0].src = e.target.currentSrc;
+  }
+});
+
+window.addEventListener("keydown", (e) => {
+  console.log(e.key);
+  if (e.key === "Escape") {
+    modalRef.style.display = "none";
+  }
+});
+
+modalRef.addEventListener("click", (e) => {
+  if (e.target.localName !== "img") {
+    modalRef.style.display = "none";
+  }
+});
+
+const todoArr = [];
+formRef.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (todoRef.value.trim() === "") {
+    return;
+  }
+  const mark = `<li id = ${Math.round(
+    Math.random() * 10000
+  )}><p>${todoRef.value.trim()}</p><button>Delete</button></li>`;
+  todoArr.push(mark);
+  todoListRef.innerHTML = "";
+  todoListRef.insertAdjacentHTML("beforeend", todoArr.join(""));
+  todoArr.value = "";
+});
+
+filterRef.addEventListener("input", (e) => {
+  const filterTodoArr = todoArr.filter((item) =>
+    item.includes(filterRef.value)
+  );
+  todoListRef.innerHTML = "";
+  todoListRef.insertAdjacentHTML("beforeend", filterTodoArr.join(""));
+});
+
+const btnRef = document.querySelector(".btnDel");
+btnRef.addEventListener("click", (e) => {
+  console.dir(e.currentTarget);
+});
