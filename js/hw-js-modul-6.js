@@ -1292,23 +1292,23 @@
 // };
 // console.log(getTotalBalanceByGender(users, "male"));
 
-function oddOrEven(array) {
-  let total = 0;
-  const a = array.map((item) => {
-    total += item;
-  });
-  console.log(total);
-  if (total % 2 === 0) {
-    console.log("even");
-    return "even";
-  } else {
-    total % 2 !== 0;
-    console.log("odd");
-    return "odd";
-  }
-}
+// function oddOrEven(array) {
+//   let total = 0;
+//   const a = array.map((item) => {
+//     total += item;
+//   });
+//   console.log(total);
+//   if (total % 2 === 0) {
+//     console.log("even");
+//     return "even";
+//   } else {
+//     total % 2 !== 0;
+//     console.log("odd");
+//     return "odd";
+//   }
+// }
 
-oddOrEven([0, 1, 5]);
+// oddOrEven([0, 1, 5]);
 
 // oddOrEven(2, 4, 7, 4, 34, 56, 24);
 // console.log(oddOrEven([0, 1, -4]));
